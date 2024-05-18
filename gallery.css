@@ -74,3 +74,38 @@ figcaption{
  opacity: 1;
  transform: scale(1.03);
 }
+
+
+@media (min-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+    .card {
+        width: 32%;
+    }
+}
+
+/* 2 columns for medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    .card {
+        width: 48%;
+    }
+}
+
+/* 1 column for small screens (phones) */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .card {
+        width: 100%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
